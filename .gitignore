@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.claude/
+# Generated PDFs of the curriculum — the markdown files are the source
+kafka/pdf/

@@ -1,0 +1,26 @@
+{
+  "name": "kafka-chat-pipeline",
+  "version": "1.0.0",
+  "description": "Learn Kafka by building a chat-platform event pipeline",
+  "type": "module",
+  "scripts": {
+    "topics": "tsx src/setup-topics.ts",
+    "api": "tsx src/api.ts",
+    "api:outbox": "tsx src/api-outbox.ts",
+    "relay": "tsx src/outbox-relay.ts",
+    "producer": "tsx src/producer.ts",
+    "consumer:notifications": "tsx src/consumers/notification-service.ts",
+    "consumer:analytics": "tsx src/consumers/analytics-service.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0"
+  }
+}
