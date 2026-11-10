@@ -103,7 +103,7 @@ group every 5s, warn on 3 consecutive rises. This is Burrow in 40 lines.
 ## Capstone — the mastery test
 
 On paper, no code: design the event architecture for a full chat platform
-(CometChat-scale). Must cover: every topic with partition count, key, and
+(think a multi-tenant chat SDK provider). Must cover: every topic with partition count, key, and
 retention/compaction choice; every consumer group; the outbox decision;
 DLQ + re-drive strategy; schema evolution policy; what happens when the
 notification service is down for an hour; adding read-receipts with zero
